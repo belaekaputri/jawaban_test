@@ -1,0 +1,2 @@
+/*Tampilkan daftar siswa beserta kelas dan guru yang mengajar kelas tersebut */
+select students.id as "Id Student", students.name as "Student Name",students.age as "Student Age",classes.name as "Class",teachers.name as "Teacher ",teachers.subject as "Teacher Subject" from students inner join classes on students.class_id=classes.id inner join teachers on classes.teacher_id=teachers.id;

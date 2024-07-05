@@ -1,0 +1,1 @@
+select classes.id as "class id", classes.name as "class", teachers.name as "teacher", teachers.subject from classes inner join teachers ON classes.teacher_id=teachers.id where teachers.id in (select teacher_id from classes GROUP by teacher_id having count(teacher_id)>1) order by classes.name asc;
