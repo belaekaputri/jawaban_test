@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "16a65c59-cb47-4ef4-b0f3-3951ae5bc824",
+		"name": "Vehicles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11783371"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "nadya",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nadya@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "is_admin",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/auth/api/v1/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "endang@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/auth/api/v1/login"
+			},
+			"response": []
+		},
+		{
+			"name": "vehiclebrand",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb3dzIjpbeyJpZCI6MiwibmFtZSI6Im5hZHlhIiwiZW1haWwiOiJuYWR5YUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjIwMmNiOTYyYWM1OTA3NWI5NjRiMDcxNTJkMjM0YjcwIiwiaXNfYWRtaW4iOjIsImNyZWF0ZWRfYXQiOiIyMDI0LTA3LTA0VDE3OjAwOjAwLjAwMFoiLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNy0wNFQxNzowMDowMC4wMDBaIn1dLCJpYXQiOjE3MjAxOTYzMzIsImV4cCI6MTcyMDE5ODczMn0.P2PLCLu2n50JCBFBBnTNSNraTjGC79m-ge3w1CLGaok"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "semangat",
+							"type": "text"
+						},
+						{
+							"key": "is_admin",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/auth/vehiclebrand"
+			},
+			"response": []
+		},
+		{
+			"name": "vehiclebrand",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb3dzIjpbeyJpZCI6MiwibmFtZSI6Im5hZHlhIiwiZW1haWwiOiJuYWR5YUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjIwMmNiOTYyYWM1OTA3NWI5NjRiMDcxNTJkMjM0YjcwIiwiaXNfYWRtaW4iOjIsImNyZWF0ZWRfYXQiOiIyMDI0LTA3LTA0VDE3OjAwOjAwLjAwMFoiLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNy0wNFQxNzowMDowMC4wMDBaIn1dLCJpYXQiOjE3MjAxOTYzMzIsImV4cCI6MTcyMDE5ODczMn0.P2PLCLu2n50JCBFBBnTNSNraTjGC79m-ge3w1CLGaok"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "belajar",
+							"type": "text"
+						},
+						{
+							"key": "is_admin",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3001/auth/vehiclebrand"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
